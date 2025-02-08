@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# Web Shop :department_store:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+E-commerce platform.  
+Explore products, manage your cart, and enjoy seamless user authentication.
 
-Currently, two official plugins are available:
+## :sparkles: Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. **User Authentication**
+- Secure registration/login system
+- Form validation for user inputs
+- Written by Formik framework
+![image](https://github.com/user-attachments/assets/dca8c0ca-04d8-4bc0-9db1-fea34ca7e6d1)
 
-## Expanding the ESLint configuration
+### 2. **Product Catalog**
+- Browse products by categories (electronics, clothing, etc.)
+- Detailed product pages with specifications  
+![image](https://github.com/user-attachments/assets/d06dc6d2-fc4a-4997-9015-b21e29bf8816)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![image](https://github.com/user-attachments/assets/a841ac98-10aa-419b-a3dc-ea03a7c5b934)
 
-- Configure the top-level `parserOptions` property like this:
+### 3. **Shopping Cart**
+- Add/remove items with quantity control
+- Real-time total cost calculation  
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+![image](https://github.com/user-attachments/assets/5a0109db-2a24-43c5-bf78-fe983c1bc4a3)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## :hammer_and_wrench: Tech Stack
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+**Frontend**  
+| Technology | Usage |
+|------------|-------|
+| React | Dynamic UI components |
+| HTML/CSS | Layout and styling |
+| JavaScript | Interactive features |
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## :rocket: Installation
+
+1. Clone the repository:
+   ```git clone https://github.com/yourusername/web-shop.git```
+2. Run command ```npm run dev```
+3. Go to localhost
