@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+Link, a {
+    text-decoration: none;
+    color: #333;
+}
+
+#header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px 20px;
+}
+
+#webSiteLogo {
+    margin: 0; 
+    padding-right: 8px;
+    color: #007BFF;
+}
+
+.searchBar {
+    width: 20vw;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid grey;
+    border-radius: 15px;
+}
+
+#searchBarResults {
+    position: absolute;
+    z-index: 10;
+    left: 20%;
+    right: 20%;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+.searchBarProductContainer {
+    padding: 4px 4px;
+    margin: 0;
+}
+
+.searchBarProductContainer:hover {
+    outline: 3px solid #007BFF;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style: none; 
+    margin: 0;
+    padding: 0; 
+}
+
+nav ul li {
+    margin-left: 20px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #007BFF; 
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 16px;
+    padding: 10px;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 30%);
+    padding: 16px;
+    text-align: center;
+    height: fit-content;
+}
+
+.cardContainer:hover {
+    outline: 3px solid #007BFF;
+    cursor: pointer;
+}
+
+.card .cardImage {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 8px;
+}
+
+.card .cardTitle {
+    margin: 24px 0;
+    color: #333;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.card .cardPrice {
+    margin-top: auto;
+    margin-bottom: 0;
+    color: #333;
+    color: #007BFF; 
+}
+
+.productDescriptionContainer {
+    margin: 12px;
+    padding: 8px;
+    outline: 3px solid grey;
+    border-radius: 10px;
+
+    .card {
+        border: 0px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 30%);
+        padding: 16px;
+        text-align: center;
+        height: 250px;
+    }
+
+    .card:hover {
+        outline: 0px solid grey;
+        cursor: auto;
+    }
+    
+    .productInformation > p {
+        padding: 4px 8px;
+    }
+
+    .productInformation strong {
+        color: #007bff;
+    }
+}
+
+#footerText {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 8px;
+    border-radius: 12px;
+    border: solid 3px grey;
+
+    input {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.emailContainer,
+.passwordContainer,
+.nameContainer,
+.surnameContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    margin: 12px auto 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.buyButtonIsClicked {
+    background-color: grey;
+}
+
+.buyButtonIsClicked:hover {
+    background-color: #333;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.errorSigninMessage,
+.errorLoginMessage {
+    color: red;
+    text-align: center;
+}
+
+.profileInformation {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20%;
+    padding: 1rem;
+    border-radius: 12px;
+    border: solid 3px grey;
+
+    p strong {
+        color: #007bff;
+    }
+
+    h2 span {
+        color: #007bff;
+    }
+}
+
+.addProductInCartButton,
+.oddProductInCartButton {
+    width: 5vw;
+    margin: 8px 8px;
+}
+
+#buyProductsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between; 
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 30%);
+    padding: 16px;
+    margin: 0 12px;
+    min-width: 250px;
+    text-align: center;
+    height: fit-content;
+
+    span {
+        color:#007BFF;
+    }
+
+    button {
+        margin: auto;
+    }
+}
