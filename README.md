@@ -31,7 +31,7 @@ Explore products, manage your cart, and enjoy seamless user authentication.
 |------------|-------|
 | React | Dynamic UI components |
 | HTML/CSS | Layout and styling |
-| JavaScript | Interactive features |
+| TypeScript | Interactive features |
 
 ## :rocket: Installation
 
