@@ -36,6 +36,6 @@ Explore products, manage your cart, and enjoy seamless user authentication.
 ## :rocket: Installation
 
 1. Clone the repository:
-   ```git clone https://github.com/yourusername/web-shop.git```
+   ```git clone https://github.com/Zzysa/webshop.git```
 2. Run command ```npm run dev```
 3. Go to localhost
